@@ -1,5 +1,5 @@
 # Sensitive config file
-config.cfg
+token.cfg
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

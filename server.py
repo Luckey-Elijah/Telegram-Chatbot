@@ -4,6 +4,7 @@ from typing import Final
 
 update_id = None
 RESULT_KEY: Final = "result"
+CONFIG_FILE = "token.cfg"
 
 
 def make_reply(message):
@@ -14,7 +15,7 @@ def make_reply(message):
 
 while True:
     print("...")
-    b = bot("config.cfg")
+    b = bot(CONFIG_FILE)
     updates = b.get_updates(offset=update_id)
     updates = updates[RESULT_KEY]
     if updates:
